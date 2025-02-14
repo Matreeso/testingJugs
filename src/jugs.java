@@ -18,6 +18,7 @@ public class jugs {
         water.add(x);
         water.add(y);
         water.add(z);
+        //System.out.println(water.get(0) + " " + water.get(1) + " " + water.get(2));
 
         // Return arraylist of arraylist
 
