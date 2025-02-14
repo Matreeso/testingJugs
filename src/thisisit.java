@@ -44,12 +44,12 @@ public class thisisit {
 
         // Inputs
         String[] inputs = input.split(" ", 10);
-        a = Integer.parseInt(inputs[0]);
-        b = Integer.parseInt(inputs[1]);
-        c = Integer.parseInt(inputs[2]);
-        x = Integer.parseInt(inputs[3]);
-        y = Integer.parseInt(inputs[4]);
-        z = Integer.parseInt(inputs[5]);
+        a = Integer.parseInt(args[0]);
+        b = Integer.parseInt(args[1]);
+        c = Integer.parseInt(args[2]);
+        x = Integer.parseInt(args[3]);
+        y = Integer.parseInt(args[4]);
+        z = Integer.parseInt(args[5]);
 
 
         List<Integer> tempMez = new ArrayList<>();
