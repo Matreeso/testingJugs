@@ -147,10 +147,7 @@ public class thisisit {
                 System.out.println(result.substring(0, result.length()-2));
             }
             q.remove();
-            if (iteration == 8){
-                System.out.println("----:-----------------:---------------------------------");
-                System.exit(0);
-            }
         }
+        System.out.println("----:-----------------:---------------------------------");
     }
 }
