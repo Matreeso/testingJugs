@@ -8,7 +8,7 @@ import java.util.Queue;
 import java.util.Set;
 import java.util.Scanner;
 
-public class thisisit {
+public class bajwa_hendley {
     public static ArrayList<Integer> sortList(List<Integer> set){
         ArrayList<Integer> tra = new ArrayList<>(set);
         int n = tra.size();
@@ -29,8 +29,6 @@ public class thisisit {
     }
     public static void main(String[] args){
         Scanner scnr = new Scanner(System.in);
-        String input = scnr.nextLine();
-        scnr.close();
         Queue<List<List<Integer>>> q = new LinkedList<>();
         jugs j = new jugs();
         Set<List<Integer>> forDaQ = new HashSet<>();
@@ -43,13 +41,23 @@ public class thisisit {
         int x = 0; int y = 2; int z = 11;
 
         // Inputs
-        String[] inputs = input.split(" ", 10);
-        a = Integer.parseInt(args[0]);
-        b = Integer.parseInt(args[1]);
-        c = Integer.parseInt(args[2]);
-        x = Integer.parseInt(args[3]);
-        y = Integer.parseInt(args[4]);
-        z = Integer.parseInt(args[5]);
+        if (args.length != 6){
+            String input = scnr.nextLine();
+            String[] inputs = input.split(" ");
+            a = Integer.parseInt(inputs[0]);
+            b = Integer.parseInt(inputs[1]);
+            c = Integer.parseInt(inputs[2]);
+            x = Integer.parseInt(inputs[3]);
+            y = Integer.parseInt(inputs[4]);
+            z = Integer.parseInt(inputs[5]);
+        } else {
+            a = Integer.parseInt(args[0]);
+            b = Integer.parseInt(args[1]);
+            c = Integer.parseInt(args[2]);
+            x = Integer.parseInt(args[3]);
+            y = Integer.parseInt(args[4]);
+            z = Integer.parseInt(args[5]);
+        }
 
 
         List<Integer> tempMez = new ArrayList<>();
